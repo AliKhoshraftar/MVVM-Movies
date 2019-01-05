@@ -70,6 +70,7 @@ class MovieDetailFragment : androidx.fragment.app.Fragment(), LifecycleOwner {
         movie_detail_actors_title.visibility = VISIBLE
         movie_detail_awards_title.visibility = VISIBLE
         movie_detail_summary_title.visibility = VISIBLE
+        movie_detail_imdb_image.visibility = VISIBLE
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

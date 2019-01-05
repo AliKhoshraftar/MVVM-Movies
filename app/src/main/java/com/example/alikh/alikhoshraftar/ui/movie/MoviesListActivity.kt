@@ -30,6 +30,8 @@ class MoviesListActivity : AppCompatActivity(), ClickListener.MoviesListClickEve
 
         supportActionBar!!.hide()
 
+        mFragmentManager = supportFragmentManager
+
         binding = DataBindingUtil.setContentView(this, R.layout.activity_movies_list)
         viewModel = ViewModelProviders.of(this).get(MovieSearchViewModel::class.java)
         scrollListener =
@@ -96,7 +98,6 @@ class MoviesListActivity : AppCompatActivity(), ClickListener.MoviesListClickEve
 
     private fun showMovieDetail(movieId: String) {
         movie_detail_fragment_container.visibility = VISIBLE
-        mFragmentManager = supportFragmentManager
         transaction = mFragmentManager.beginTransaction()
         transaction.setCustomAnimations(
             R.anim.fragment_enter,

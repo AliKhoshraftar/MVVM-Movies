@@ -105,8 +105,9 @@
                         app:layout_constraintStart_toStartOf="@+id/poster_detail_seperator_guid_line"
                         android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
                         android:layout_marginTop="22dp"
-                        app:layout_constraintTop_toBottomOf="@+id/movie_detail_released" android:layout_marginBottom="8dp"
-                        app:layout_constraintBottom_toTopOf="@+id/poster_guid_line"/>
+                        app:layout_constraintTop_toBottomOf="@+id/movie_detail_released"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toTopOf="@+id/poster_guid_line" android:visibility="invisible"/>
                 <TextView
                         android:text="@{movieViewModel.movieImdbRating}"
                         android:layout_width="wrap_content"
