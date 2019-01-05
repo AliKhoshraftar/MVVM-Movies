@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="darknavy">#011A27</color>
+    <color name="blueberry">#063852</color>
+    <color name="fangerine">#F0810F</color>
+    <color name="daffodil">#E6DF44</color>
+    <color name="main_list_bg">#141414</color>
+    <color name="main_list_item_bg">#303030</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="search_error">#ff0008</color>
+
+    <color name="search_bar_gray_color">#515151</color>
+
+    <color name="poster_shadow_end">#45000000</color>
+    <color name="poster_shadow_start">#000000</color>
+
+</resources>

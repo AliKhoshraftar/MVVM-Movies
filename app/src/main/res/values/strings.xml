@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TwTest-AliKhoshraftar</string>
+    <string name="search_bar_hint">Search ...</string>
+    <string name="min_search_required">At least 3 Character needed</string>
+    <string name="search_same_result">This is your result :)</string>
+    <string name="actors">Actors</string>
+    <string name="summary">Summary</string>
+    <string name="movie_detail_fragment_arg">movie_id</string>
+    <string name="awards">Awards</string>
+    <string name="bad">bad</string>
+</resources>

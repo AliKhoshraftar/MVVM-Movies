@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+                name="viewModel"
+                type="com.example.alikh.alikhoshraftar.ui.movie.MovieViewModel"/>
+    </data>
+    <com.google.android.material.card.MaterialCardView
+            android:id="@+id/movies_list_item_container"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:cardCornerRadius="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="#212121"
+                android:id="@+id/movies_list_item_main_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/movies_list_item_cover_image_container"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/movies_list_item_cover_image"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:imageUrl="@{viewModel.moviePoster}"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/movies_list_item_title"
+                    android:text="@{viewModel.movieTitle}"
+                    android:textColor="@color/fangerine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="30"
+                    android:layout_marginTop="8dp"
+                    app:font="@{`campus`}"
+                    android:textSize="18sp"
+                    android:maxLines="2"
+                    app:layout_constraintStart_toEndOf="@+id/movies_list_item_cover_image_container"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                    app:layout_constraintTop_toTopOf="@+id/movies_list_item_cover_image_container"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/movies_list_item_year"
+                    android:text="@{viewModel.movieYear}"
+                    android:textColor="@color/fangerine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="casual"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/movies_list_item_title"
+                    app:layout_constraintStart_toStartOf="@+id/movies_list_item_title"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/movies_list_item_type"
+                    android:text="@{viewModel.movieType}"
+                    android:textColor="@color/fangerine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="casual"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@+id/movies_list_item_year"
+                    app:layout_constraintStart_toStartOf="@+id/movies_list_item_year"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>
